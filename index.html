@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            background-color: #e7ebf7;
+            margin: 0px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        form {
+            background-color: #fff;
+            border: 1px solid rgba(2, 0, 0, 0.5);
+            width: 800px;
+            margin: auto;
+            padding-top: 15px;
+            letter-spacing: .05em;
+        }
+
+        input,
+        button,
+        textarea {
+
+            display: block;
+            margin: 3px;
+            width: 300px;
+            padding: 15px 20px;
+            margin: 15px;
+            border-radius: 4px;
+        }
+
+        textarea {
+            width: 727px; height: 182px;
+        }
+
+        button {
+            text-decoration: none;
+            padding: 20px 50px;
+            border: 2px solid; 
+            color: #3c67e3;
+            border-radius: 10px;
+            width: 200px;
+            padding: 15px 20px;
+        }
+
+        button:hover {
+            animation: pulsate 1s;
+        }
+
+        @keyframes pulsate{
+            0%{
+                box-shadow: 0 0 25px #5ddcff;
+                box-shadow: 0 0 25px #4e00c2;
+            }
+        }
+
+        label{
+            padding: 15px;
+        }
+
+        input{
+            border: 1px solid #ccc
+        }
+
+    </style>
+
+</head>
+<body>
+    <br>
+    <br>
+    <form action="">
+        
+        <div>
+            <label for="name">Meno:</label><br>
+            <input type="text" name="name" id="name" placeholder="Zadajte vaše meno">
+            <span class="help-block"></span>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Zadajte váš email">
+        </div>
+
+        <div>
+            <label for="message">Správa</label>
+            <textarea name="message" class="form-control" rows="6" id="message" placeholder="Zadajte vašu správu" ></textarea>
+        </div>
+
+        <div>
+            <button type="submit">
+                Poslať správu
+            </button>
+        </div>
+
+    </form>
+    
+</body>
+</html>
